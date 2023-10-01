@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="./src/static/ico/favicon.png">
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <title>Piouw: A Twitch Web API Client</title>
+</head>
+
+<body>
+  <div class="nav-wrapper">
+    <div class="nav-container">
+      <div class="logo">
+        <h1>PIOUW</h1>
+      </div>
+      <div class="nav">
+        <div class="nav-entry">
+          <div>
+            <p>Channels</p>
+            <img src=" ./src/static/ico/expand.svg" class="expand">
+          </div>
+          <div class="nav-options">
+            <div class="add-channel">
+              <p>Add channel</p>
+            </div>
+            <div class="refresh-channels">
+              <p>Refresh channels</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-entry">
+          <div>
+            <p>Preferences</p>
+            <img src="./src/static/ico/expand.svg" class="expand">
+          </div>
+          <div class="nav-options">
+            <div class="sort-by-viewer-count">
+              <p>Sort by viewer count</p>
+            </div>
+            <div class="sort-alphabetically">
+              <p>Sort alphabetically</p>
+            </div>
+            <div class="live-only">
+              <p>Live only</p>
+            </div>
+            <div class="api-details">
+              <p>API details</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-entry">
+          <div>
+            <p>Docs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="side-panel">
+      <div class="side-panel-status"></div>
+      <div class="side-panel-feed"></div>
+    </div>
+    <div class="main-panel">
+    </div>
+    <div id="twitch-embed"></div>
+  </div>
+  <div class="footer">
+    <p>Copyright &copy; 2023 Jonas Lind.</p>
+    <p>All rights reserved.</p>
+  </div>
+  <script type="module" src="./dist/app.js"></script>
+</body>
+
+</html>
