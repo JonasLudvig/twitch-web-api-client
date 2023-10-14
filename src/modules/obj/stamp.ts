@@ -6,8 +6,7 @@ export class Stamp {
   private format: string;
 
   setFormat = (input: string) => (this.format = input);
-
-  getStamp(): string {
+  getStamp(): [string, string] {
     const currentDate = new Date();
 
     const stamp = currentDate.toLocaleTimeString(this.format, {
@@ -17,6 +16,8 @@ export class Stamp {
       second: 'numeric',
     });
 
-    return stamp;
+    const milliseconds = currentDate.getMilliseconds().toString();
+
+    return [stamp, milliseconds];
   }
 }

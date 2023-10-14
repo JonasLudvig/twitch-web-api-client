@@ -98,7 +98,8 @@ a:active {
     align-items: center;
     display: flex;
     padding: 10px;
-    p {
+    p,
+    a {
       color: $prmTxtClr;
       font-family: FiraSans-SemiBold;
       font-size: 18px;
