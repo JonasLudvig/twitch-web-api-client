@@ -23,7 +23,6 @@
   font-family: FiraSans-SemiBold;
   src: url(../../dist/fonts/fira/FiraSans-SemiBold.ttf);
   font-style: normal;
-  font-display: swap;
   font-weight: 600;
 }
 @font-face {
@@ -80,8 +79,8 @@ a:active {
 .logo {
   h1 {
     color: #ffba86;
-    font-family: FiraSans-Medium;
-    font-weight: 500;
+    font-family: FiraSans-Bold;
+    font-weight: 700;
     font-size: 27px;
     margin: 0 10px 0 0;
     transform: translate(0, -2px);
@@ -103,6 +102,7 @@ a:active {
       color: $prmTxtClr;
       font-family: FiraSans-SemiBold;
       font-size: 18px;
+      font-weight: 600;
     }
     img {
       margin: 0 0 0 4px;
@@ -131,6 +131,7 @@ a:active {
         color: $prmTxtClr;
         font-family: FiraSans-SemiBold;
         font-size: 16px;
+        font-weight: 600;
       }
     }
     div:hover {
@@ -226,11 +227,11 @@ a:active {
   padding: 13px 10px 10px 10px;
   width: 100%;
   h1 {
-    font-family: FiraSans-Medium;
+    font-family: FiraSans-Bold;
     font-size: 16px;
+    font-weight: 700;
     margin: 0 0 4px 0;
   }
-
   div {
     display: block;
     text-align: left;
@@ -244,14 +245,16 @@ a:active {
       font-family: FiraSans-Medium;
       font-size: 14px;
       margin: 2px 0 0 0;
+      font-weight: 500;
     }
     .live {
       background: #ff0000;
       border-radius: 3px;
       color: $prmTxtClr;
       display: inline;
-      font-family: FiraSans-Medium;
+      font-family: FiraSans-SemiBold;
       font-size: 12px;
+      font-weight: 600;
       padding: 2.5px 4px 1.5px 4px;
       position: relative;
       top: -1px;
@@ -289,8 +292,9 @@ a:active {
   z-index: 3;
   h1 {
     color: $invTxtClr;
-    font-family: FiraSans-Medium;
+    font-family: FiraSans-Bold;
     font-size: 24px;
+    font-weight: 700;
     text-align: center;
   }
   input {
@@ -300,6 +304,7 @@ a:active {
     color: $invTxtClr;
     font-family: FiraSans-Regular;
     font-size: 16px;
+    font-weight: 400;
     margin: 24px 0 10px 0;
     padding: 8px 10px 6px 10px;
     width: 100%;
@@ -321,6 +326,7 @@ a:active {
       padding: 10px;
       white-space: nowrap;
       width: 100%;
+      font-weight: 400;
     }
     .confirm {
       background: #43c078;
@@ -363,6 +369,7 @@ a:active {
         font-family: FiraSans-Regular;
         font-size: 14px;
         white-space: nowrap;
+        font-weight: 400;
       }
     }
   }
@@ -387,6 +394,7 @@ a:active {
   p {
     color: $prmTxtClr;
     font-family: FiraSans-Regular;
+    font-weight: 400;
     margin: 0 0 6px 0;
   }
 }
