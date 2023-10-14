@@ -21,8 +21,7 @@ export async function getChannelsAndStreams(
   const response = await fetch(
     `https://qsdlr.org/twitch-rest-api/get-user?${queryString}`
   );
-  const channels = await response.json();
-  const channelsArray = JSON.parse(channels);
+  const channelsArray = JSON.parse(await response.json());
   const channelData: ChannelData[] = channelsArray.data;
 
   const responseStream = await fetch(
@@ -31,11 +30,10 @@ export async function getChannelsAndStreams(
       'user_id='
     )}`
   );
-  const streams = await responseStream.json();
   status?.setResponse(responseStream.status);
   if (status) drawStatus(status);
 
-  const streamsArray = JSON.parse(streams);
+  const streamsArray = JSON.parse(await responseStream.json());
   const streamData: StreamData[] = streamsArray.data;
 
   const channelsAndStreams: ChannelAndStream[] = channelData.map(
