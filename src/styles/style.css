@@ -50,6 +50,11 @@ a:active {
   text-decoration: none;
 }
 
+button:focus {
+  outline-offset: 2px;
+  outline: 2px dashed #999;
+}
+
 .nav-wrapper {
   background: #131313;
 }
@@ -214,6 +219,7 @@ a:active {
   margin: 0 0 6px 0;
   overflow: hidden;
   padding: 13px 10px 10px 10px;
+  white-space: nowrap;
   width: 100%;
 }
 .channel-entry h1 {
@@ -235,8 +241,11 @@ a:active {
   color: #1e1e1e;
   font-family: FiraSans-Medium;
   font-size: 14px;
-  margin: 2px 0 0 0;
   font-weight: 500;
+  margin: 2px 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 210px;
 }
 .channel-entry div .live {
   background: #ff0000;
