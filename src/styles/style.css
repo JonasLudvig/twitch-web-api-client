@@ -66,21 +66,15 @@ button:focus {
   height: 60px;
   margin: 0 0 0 20px;
 }
+.nav-container img {
+  height: 32px;
+}
 
 .nav {
   display: flex;
   height: 100%;
   position: relative;
   width: 100%;
-}
-
-.logo h1 {
-  color: #ffba86;
-  font-family: FiraSans-Bold;
-  font-weight: 700;
-  font-size: 27px;
-  margin: 0 10px 0 0;
-  transform: translate(0, -2px);
 }
 
 .nav-entry {
@@ -105,6 +99,9 @@ button:focus {
 .nav-entry div img {
   margin: 0 0 0 4px;
   transition: 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   width: 18px;
 }
 .nav-entry .nav-options {

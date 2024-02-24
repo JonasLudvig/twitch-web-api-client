@@ -14,7 +14,7 @@ export class Status {
   private responseTime!: number;
 
   getPrompt = () => this.prompt;
-  getStamp = () => this.stamp;
+  getStamp = () => this.stamp[0];
   getId = () => this.id;
   getResponse = () => this.response;
   setResponse(response: number) {
